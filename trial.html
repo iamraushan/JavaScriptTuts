@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <title> Trial Page</title>
+   
+    <body>
+    <h2 align="center">Kilometer - miles converter </h2>
+        
+            <table align="center">
+                <tr><td>Kilometers</td><td><input type ="number" id='t1' oninput="check()" ></td></tr>
+                
+                <tr><td>Miles</td><td><input type ="number" id='t3' oninput="check1()"></td></tr>
+                
+            </table>
+        
+    
+    
+        
+    
+    
+    </body>
+ <script>
+       
+    function check()
+     {
+         var v1 = parseFloat(document.getElementById("t1").value,10) || 0;
+         var v3 = v1*0.621371;
+         document.getElementById("t3").value=v3;
+         
+     }
+     function check1()
+     {
+         var v1 = parseFloat(document.getElementById("t3").value,10) ||  0;
+         var v2 = v1 * 1.609;
+         document.getElementById("t1").value=v2;
+         
+     }
+            
+            
+       
+        
+    </script>
+</html>
